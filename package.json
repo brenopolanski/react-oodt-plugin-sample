@@ -1,0 +1,37 @@
+{
+  "name": "react-oodt-plugin-sample",
+  "version": "0.1.0",
+  "description": "React OODT plugin sample",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenopolanski/react-oodt-plugin-sample.git"
+  },
+  "author": "Breno Polanski",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/brenopolanski/react-oodt-plugin-sample/issues"
+  },
+  "homepage": "https://github.com/brenopolanski/react-oodt-plugin-sample#readme",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "ts-react-json-table": "^0.1.1",
+    "yup": "^0.26.6"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.2",
+    "prettier": "^1.12.1"
+  }
+}
