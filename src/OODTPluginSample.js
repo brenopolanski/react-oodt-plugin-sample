@@ -9,11 +9,19 @@ const schema = object().shape({
 });
 
 class OODTPluginSample extends Component {
-  state = {
-    product: {},
-    error: false,
-    loading: true
-  };
+
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      product: {},
+      error: false,
+      loading: true
+    };
+
+    this.fetchData = this.fetchData.bind(this);
+  }
 
   componentDidMount() {
     schema
