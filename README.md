@@ -31,13 +31,13 @@ Here's an example of basic usage:
 
 ```
 import React, { Component } from 'react';
-import OODTSample from 'react-oodt-plugin-sample';
+import OODTPluginSample from 'react-oodt-plugin-sample';
 
 class MyApp extends Component {
   render() {
     return (
       <div>
-        <OODTSample productId="ce4380c5-d0d2-11e8-89ca-121c29fc9f21" />
+        <OODTPluginSample productId="ce4380c5-d0d2-11e8-89ca-121c29fc9f21" />
       </div>
     );
   }

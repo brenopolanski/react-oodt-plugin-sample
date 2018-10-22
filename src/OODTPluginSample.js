@@ -8,11 +8,7 @@ const schema = object().shape({
   interval: number()
 });
 
-class OODTSample extends Component {
-  static defaultProps = {
-    interval: 1000 * 60 * 5
-  };
-
+class OODTPluginSample extends Component {
   state = {
     product: {},
     error: false,
@@ -67,5 +63,9 @@ class OODTSample extends Component {
     );
   }
 }
+
+OODTPluginSample.defaultProps = {
+  interval: 1000 * 60 * 5
+};
 
 export default OODTPluginSample;
