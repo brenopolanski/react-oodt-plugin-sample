@@ -9,8 +9,6 @@ const schema = object().shape({
 });
 
 class OODTPluginSample extends Component {
-
-
   constructor(props) {
     super(props);
 
